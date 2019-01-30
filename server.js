@@ -44,6 +44,13 @@ app.get('/about' , (req, res) => {
     });
 });
 
+app.get('/project' , (req, res) => {
+    res.render('project.hbs', {
+        pageTitle: 'Profile Page',
+    });
+});
+
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: "Error 404"
